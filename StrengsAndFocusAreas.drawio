@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="nE8QuvAnha3wIY4IBdJq">
+    <mxGraphModel dx="1822" dy="1016" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;fontSize=25;strokeColor=none;fillColor=none;align=left;" value="&lt;b&gt;Zaphire Target Cloud Architecture — Strengths &amp;amp; Focus Areas&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="1440" x="30" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="html=1;whiteSpace=wrap;fontSize=15;strokeColor=none;fillColor=none;align=left;" value="Target architecture assessment · Limit the impact of failures and security compromises." vertex="1">
+          <mxGeometry height="35" width="1440" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="left" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#E1F2E6;strokeColor=#76A67B;fontSize=20;align=left;spacingLeft=20;" value="&lt;b&gt;Architectural strengths&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="760" x="30" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="right" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#E7F0FF;strokeColor=#6797D3;fontSize=20;align=left;spacingLeft=20;" value="&lt;b&gt;Manageable risks &amp; next steps&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="650" x="820" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="s0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Limited blast radius&lt;/b&gt;&lt;br&gt;Separate customer, regional, storage and privileged management trust boundaries." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="si0" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Regional independence&lt;/b&gt;&lt;br&gt;Shared services and customer workloads scale and operate regionally." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="si1" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Independent compute and storage&lt;/b&gt;&lt;br&gt;Relocate workloads without moving customer data; explicit data residency." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="si2" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="461" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Secure software supply chain&lt;/b&gt;&lt;br&gt;Signed releases, controlled promotion and independent production registries." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="544" as="geometry" />
+        </mxCell>
+        <mxCell id="si3" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="579" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Declarative recovery&lt;/b&gt;&lt;br&gt;Regional operators reconstruct workloads from desired state." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="si4" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="697" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F0F8F1;strokeColor=#A6C9AC;fontSize=16;align=left;spacingLeft=65;spacingRight=16;" value="&lt;b&gt;Cost-efficient scaling&lt;/b&gt;&lt;br&gt;Multi-tenancy, lightweight workloads, bounded database cache and long-term object storage." vertex="1">
+          <mxGeometry height="104" width="760" x="30" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="si5" parent="1" style="html=1;whiteSpace=wrap;ellipse;fillColor=#D4EBDD;strokeColor=none;fontColor=#28734B;fontSize=23;fontStyle=1;" value="✓" vertex="1">
+          <mxGeometry height="34" width="34" x="45" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="r0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F4F7FB;strokeColor=#A8BCD5;fontSize=15;align=left;spacingLeft=20;spacingRight=20;" value="&lt;b&gt;Privileged services &amp; blast radius&lt;/b&gt;&lt;br&gt;SSO, Rancher, Site Operators and release management have wider privileges.&lt;br&gt;&lt;b&gt;Focus:&lt;/b&gt; Enforce least privilege, scoped APIs, independent credentials and deployment restrictions; review cross-boundary trust." vertex="1">
+          <mxGeometry height="128" width="650" x="820" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F4F7FB;strokeColor=#A8BCD5;fontSize=15;align=left;spacingLeft=20;spacingRight=20;" value="&lt;b&gt;Single-region global services&lt;/b&gt;&lt;br&gt;SSO and Global Site Operator.&lt;br&gt;&lt;b&gt;Focus:&lt;/b&gt; Validate tokens locally, cache routes, test recovery and expand geographically when justified." vertex="1">
+          <mxGeometry height="128" width="650" x="820" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F4F7FB;strokeColor=#A8BCD5;fontSize=15;align=left;spacingLeft=20;spacingRight=20;" value="&lt;b&gt;Storage availability&lt;/b&gt;&lt;br&gt;Critical dependency for customer workloads.&lt;br&gt;&lt;b&gt;Focus:&lt;/b&gt; Test durable writes, replication, complete storage recovery and recovery targets." vertex="1">
+          <mxGeometry height="128" width="650" x="820" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F4F7FB;strokeColor=#A8BCD5;fontSize=15;align=left;spacingLeft=20;spacingRight=20;" value="&lt;b&gt;Safe workload relocation&lt;/b&gt;&lt;br&gt;Avoid overlapping active instances.&lt;br&gt;&lt;b&gt;Focus:&lt;/b&gt; Controlled relocation initially; enforce exclusive ownership before automation." vertex="1">
+          <mxGeometry height="128" width="650" x="820" y="616" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#F4F7FB;strokeColor=#A8BCD5;fontSize=15;align=left;spacingLeft=20;spacingRight=20;" value="&lt;b&gt;Operational scalability&lt;/b&gt;&lt;br&gt;Multiple clusters and subscriptions.&lt;br&gt;&lt;b&gt;Focus:&lt;/b&gt; Standardize deployments, automate maintenance and centralize health monitoring." vertex="1">
+          <mxGeometry height="128" width="650" x="820" y="758" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#EEF2F6;strokeColor=#AAB7C5;fontSize=17;align=left;spacingLeft=20;" value="&lt;b&gt;Guiding principle:&lt;/b&gt; A compromise of one workload, customer or region must not automatically compromise others. Validate trust boundaries and recovery behaviour, automate operations and introduce redundancy incrementally." vertex="1">
+          <mxGeometry height="75" width="1440" x="30" y="915" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
