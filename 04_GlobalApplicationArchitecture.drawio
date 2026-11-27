@@ -20,7 +20,7 @@
           <mxGeometry height="40" width="42" x="13" y="20" as="geometry" />
         </mxCell>
         <mxCell id="tm" parent="global" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=65;" value="&lt;b&gt;Azure Traffic Manager&lt;/b&gt;&lt;br&gt;Regional application endpoints" vertex="1">
-          <mxGeometry height="80" width="310" x="365" y="60" as="geometry" />
+          <mxGeometry height="80" width="310" x="438" y="60" as="geometry" />
         </mxCell>
         <mxCell id="tmicon" parent="tm" style="shape=mxgraph.azure.traffic_manager;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
           <mxGeometry height="40" width="42" x="13" y="20" as="geometry" />
@@ -135,12 +135,12 @@
         <mxCell id="consumersicon" parent="consumers" style="shape=mxgraph.azure.azure_subscription;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
           <mxGeometry height="40" width="42" x="13" y="25" as="geometry" />
         </mxCell>
-        <mxCell id="auth" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="sso" value="Authentication">
+        <mxCell id="auth" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="sso" value="Authentication">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="215" y="175" />
-              <mxPoint x="39" y="175" />
-              <mxPoint x="39" y="364" />
+              <mxPoint x="-4.1" y="175" />
+              <mxPoint x="-4.1" y="364" />
               <mxPoint x="230" y="364" />
             </Array>
           </mxGeometry>
@@ -175,16 +175,16 @@
         <mxCell id="pullregional" edge="1" parent="1" source="regional" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.8;exitY=0;entryX=0.2;entryY=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="acr" value="Pull only">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="385" y="870" />
-              <mxPoint x="1137" y="870" />
+              <mxPoint x="385" y="863" />
+              <mxPoint x="1137" y="863" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="pullstorage" edge="1" parent="1" source="storage" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0.8;exitY=0;entryX=0.5;entryY=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="acr" value="Pull only">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="785" y="884" />
-              <mxPoint x="1238" y="884" />
+              <mxPoint x="785" y="877" />
+              <mxPoint x="1238" y="877" />
             </Array>
           </mxGeometry>
         </mxCell>
