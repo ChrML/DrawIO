@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="u1-MGtB_q3sR2nf51PVw">
+    <mxGraphModel dx="1721" dy="960" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=25;align=left;" value="&lt;b&gt;09 — Main Disaster Recovery &amp;amp; Service Continuity Scenarios&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="1400" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="h0" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=18;align=left;" value="&lt;b&gt;Failure scenario&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="440" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=18;align=left;" value="&lt;b&gt;Recovery mechanism&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="440" x="520" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=18;align=left;" value="&lt;b&gt;Expected outcome&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="440" x="1010" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="r0c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;Regional entrypoint failure&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="r0c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Traffic Manager selects another healthy region" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="r0c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="Users reconnect; existing sites remain in place" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a0" edge="1" parent="1" source="r0c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r0c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b0" edge="1" parent="1" source="r0c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r0c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;BMS workload / cluster failure&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Regional Site Operator reconciles desired state" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="Recreate workloads; reconnect to existing storage" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="r1c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r1c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" edge="1" parent="1" source="r1c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r1c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;Entire execution region unavailable&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Reassign affected sites to a healthy region" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="Reconcile workloads against the same storage containers" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="r2c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r2c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" edge="1" parent="1" source="r2c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r2c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;Storage infrastructure failure&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Recover using native Azure replication / failover" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="Restore storage access; compute assignment unchanged" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="r3c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r3c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" edge="1" parent="1" source="r3c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r3c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;Global SSO / Site Operator unavailable&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Continue using valid sessions and cached routes" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="Existing workloads continue; new login and provisioning paused" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="r4c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r4c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" edge="1" parent="1" source="r4c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r4c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c0" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#FCE8E6;strokeColor=#D49A95;" value="&lt;b&gt;Business Services / release infrastructure outage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="30" y="715" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c1" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;" value="Continue running existing licensed software" vertex="1">
+          <mxGeometry height="90" width="440" x="520" y="715" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c2" parent="1" style="html=1;whiteSpace=wrap;rounded=1;arcSize=9;fontSize=16;spacing=12;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="New licenses, provisioning and releases may be unavailable" vertex="1">
+          <mxGeometry height="90" width="440" x="1010" y="715" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="r5c0" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r5c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" edge="1" parent="1" source="r5c1" style="edgeStyle=orthogonalEdgeStyle;endArrow=classic;strokeColor=#64748B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=default;defaultLabelBackgroundColor=page;" target="r5c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="html=1;whiteSpace=wrap;rounded=1;fillColor=#FFF4DC;strokeColor=#C8A46E;fontSize=15;align=left;spacing=12;" value="&lt;b&gt;Recovery principles:&lt;/b&gt; Compute and storage locations are independent. PostgreSQL short-term cache loss is not durable data loss. Storage failover follows the configured replication policy. Regional relocation must respect tenant-approved regions and prevent concurrent writers. RPO/RTO and automatic versus operator-controlled relocation remain to be defined." vertex="1">
+          <mxGeometry height="90" width="1420" x="30" y="845" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
