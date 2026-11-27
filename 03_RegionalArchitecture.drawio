@@ -1,0 +1,404 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Amb6kLOPvXD9TVBCzUE9">
+    <mxGraphModel dx="2838" dy="1340" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;verticalAlign=middle;" value="&lt;b&gt;03 — Regional Application Architecture&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1600" x="35" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="global" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=53;" value="&lt;b&gt;Production - Global&lt;/b&gt;&lt;br&gt;SSO · Global Site Operator · EMS metadata · Cloud ACR" vertex="1">
+          <mxGeometry height="85" width="510" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="globali" parent="global" style="shape=mxgraph.azure.azure_subscription;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#EEF0F5;strokeColor=#94A3B8;align=left;spacingLeft=53;" value="&lt;b&gt;Users / on-premise installations&lt;/b&gt;&lt;br&gt;Public HTTPS / WSS · DNS via Traffic Manager" vertex="1">
+          <mxGeometry height="85" width="510" x="620" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="usersi" parent="users" style="shape=image;html=1;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="region" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;fillColor=#F6FAF6;verticalAlign=top;spacingTop=14;container=1;fontSize=18;" value="&lt;b&gt;Zaphire Production - [Region]&lt;/b&gt;" vertex="1">
+          <mxGeometry height="840" width="1590" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="regioni" parent="region" style="shape=mxgraph.azure.azure_subscription;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="35" width="40" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="shared" parent="region" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;fillColor=#FFFFFF;verticalAlign=top;spacingTop=14;container=1;fontSize=18;" value="&lt;b&gt;AKS — Regional Shared Services&lt;/b&gt;" vertex="1">
+          <mxGeometry height="440" width="1120" x="25" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="sharedi" parent="shared" style="shape=image;html=1;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;" value="" vertex="1">
+          <mxGeometry height="35" width="40" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="operator" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Regional Site Operator&lt;/b&gt;&lt;br&gt;In-memory desired state" vertex="1">
+          <mxGeometry height="52" width="250" x="25" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="operatori" parent="operator" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="19.576470588235296" width="34" x="10" y="16.211764705882356" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;BMS Webserver&lt;/b&gt;&lt;br&gt;Public · zaphire.io" vertex="1">
+          <mxGeometry height="52" width="250" x="310" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="webi" parent="web" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="19.576470588235296" width="34" x="10" y="16.211764705882356" as="geometry" />
+        </mxCell>
+        <mxCell id="proxy" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Proxy Ingress&lt;/b&gt;&lt;br&gt;Public · on-prem access" vertex="1">
+          <mxGeometry height="52" width="235" x="595" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="proxyi" parent="proxy" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="19.576470588235296" width="34" x="10" y="16.211764705882356" as="geometry" />
+        </mxCell>
+        <mxCell id="ems" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;EMS&lt;/b&gt;&lt;br&gt;Public · ems.zaphire.io" vertex="1">
+          <mxGeometry height="52" width="230" x="865" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="emsi" parent="ems" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="19.576470588235296" width="34" x="10" y="16.211764705882356" as="geometry" />
+        </mxCell>
+        <mxCell id="map" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Map Service&lt;/b&gt;&lt;br&gt;Cluster-private" vertex="1">
+          <mxGeometry height="75" width="250" x="310" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="mapi" parent="map" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="iot" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;IoT v1 Ingress&lt;/b&gt;&lt;br&gt;Public · Norway only" vertex="1">
+          <mxGeometry height="75" width="250" x="25" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ioti" parent="iot" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="elhub" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Elhub&lt;/b&gt;&lt;br&gt;Private · Norway only" vertex="1">
+          <mxGeometry height="75" width="235" x="595" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="elhubi" parent="elhub" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="alertin" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Alerts Ingress&lt;/b&gt;&lt;br&gt;Private" vertex="1">
+          <mxGeometry height="75" width="240" x="25" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="alertini" parent="alertin" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="alertout" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Alerts Egress&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="240" x="310" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="alertouti" parent="alertout" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mail" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Mail Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="235" x="595" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="maili" parent="mail" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sms" parent="shared" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;SMS Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="230" x="865" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="smsi" parent="sms" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="21.5" as="geometry" />
+        </mxCell>
+        <mxCell id="am" edge="1" parent="shared" source="alertout" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mail" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="as" edge="1" parent="shared" source="alertout" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="sms" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="421" />
+              <mxPoint x="848" y="421" />
+              <mxPoint x="848" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="webmap" edge="1" parent="shared" source="web" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="map" value="Private">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="data" parent="region" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;fillColor=#FFFAEF;verticalAlign=top;spacingTop=14;container=1;fontSize=18;" value="&lt;b&gt;Regional Azure resources&lt;/b&gt;" vertex="1">
+          <mxGeometry height="700" width="385" x="1180" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="datai" parent="data" style="shape=mxgraph.azure.azure_subscription;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="35" width="40" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mapst" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;Map Storage Account&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="345" x="20" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="mapsti" parent="mapst" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="elst" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;Elhub Storage Account · Norway&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="345" x="20" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="elsti" parent="elst" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="alertst" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;Alerts Storage Account · Table queue&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="345" x="20" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="alertsti" parent="alertst" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="mailst" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;Mail Storage Account&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="345" x="20" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="mailsti" parent="mailst" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="smsst" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;SMS Storage Account&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="345" x="20" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="smssti" parent="smsst" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="vault" parent="data" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=53;" value="&lt;b&gt;Regional secrets&lt;/b&gt;&lt;br&gt;Key Vault proposed" vertex="1">
+          <mxGeometry height="90" width="345" x="20" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="vaulti" parent="vault" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Key_Vault.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="29" as="geometry" />
+        </mxCell>
+        <mxCell id="work" parent="region" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;fillColor=#FFFFFF;verticalAlign=top;spacingTop=14;container=1;fontSize=18;" value="&lt;b&gt;AKS — BMS Workloads&lt;/b&gt;" vertex="1">
+          <mxGeometry height="185" width="1120" x="25" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="worki" parent="work" style="shape=image;html=1;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;" value="" vertex="1">
+          <mxGeometry height="35" width="40" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ing" parent="work" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Private ingress&lt;/b&gt;&lt;br&gt;Single cluster endpoint" vertex="1">
+          <mxGeometry height="85" width="240" x="25" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ingi" parent="ing" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="site0" parent="work" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Site Service A&lt;/b&gt;&lt;br&gt;Individual SSO identity" vertex="1">
+          <mxGeometry height="85" width="240" x="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="site0i" parent="site0" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="site1" parent="work" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Site Service B&lt;/b&gt;&lt;br&gt;Individual SSO identity" vertex="1">
+          <mxGeometry height="85" width="240" x="565" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="site1i" parent="site1" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="site2" parent="work" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=53;" value="&lt;b&gt;Site Service N&lt;/b&gt;&lt;br&gt;Individual SSO identity" vertex="1">
+          <mxGeometry height="85" width="240" x="830" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="site2i" parent="site2" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ing0" edge="1" parent="work" source="ing" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="site0" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ing1" edge="1" parent="work" source="ing" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="site1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-16" y="89" />
+              <mxPoint x="-16" y="-16" />
+              <mxPoint x="685" y="-16" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ing2" edge="1" parent="work" source="ing" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="site2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-30" y="103" />
+              <mxPoint x="-30" y="-30" />
+              <mxPoint x="950" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="policy" parent="region" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;verticalAlign=middle;" value="&lt;b&gt;Security boundary:&lt;/b&gt; workload egress restricted to approved services and external dependencies; no access to shared-service Kubernetes API. Regional operator has restricted workload Kubernetes API access only." vertex="1">
+          <mxGeometry height="55" width="1530" x="25" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="opwork" edge="1" parent="region" source="operator" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;entryX=0.1;entryY=0;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="work" value="Restricted Kubernetes API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="201" />
+              <mxPoint x="34" y="201" />
+              <mxPoint x="34" y="515" />
+              <mxPoint x="137" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="webing" edge="1" parent="region" source="web" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="ing" value="Private HTTPS">
+          <mxGeometry relative="1" x="0.0013" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="201" />
+              <mxPoint x="316" y="201" />
+              <mxPoint x="316" y="587" />
+              <mxPoint x="170" y="587" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="proxying" edge="1" parent="region" source="proxy" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="ing" value="Private HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="737.5" y="201" />
+              <mxPoint x="859.6" y="201" />
+              <mxPoint x="859.6" y="588" />
+              <mxPoint x="170" y="588" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notify" edge="1" parent="region" source="work" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.25;exitY=0;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="alertin" value="Allowlisted HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="498" />
+              <mxPoint x="170" y="498" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aq" edge="1" parent="region" source="alertin" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="alertst" value="Enqueue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="338" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dq" edge="1" parent="region" source="alertout" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="alertst" value="Consume">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="352" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mapdata" edge="1" parent="region" source="map" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mapst" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="603" y="273" />
+              <mxPoint x="603" y="47" />
+              <mxPoint x="1373" y="47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eldata" edge="1" parent="region" source="elhub" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.3;entryX=0;entryY=0.6785714285714286;" target="elst" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="maildata" edge="1" parent="region" source="mail" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mailst" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="738" y="490" />
+              <mxPoint x="1165" y="490" />
+              <mxPoint x="1165" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="smsdata" edge="1" parent="region" source="sms" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="smsst" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="998" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iotwork" edge="1" parent="region" source="iot" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="ing" value="Private HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-44" y="272.5" />
+              <mxPoint x="-44" y="687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="store" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=53;" value="&lt;b&gt;Zaphire Storage - [Location]&lt;/b&gt;&lt;br&gt;Storage Ingress · independent BMS / EMS containers" vertex="1">
+          <mxGeometry height="90" width="550" x="40" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="storei" parent="store" style="shape=image;html=1;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="29" as="geometry" />
+        </mxCell>
+        <mxCell id="providers" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fontColor=#243447;fillColor=#EEF0F5;strokeColor=#94A3B8;align=left;spacingLeft=53;" value="&lt;b&gt;External delivery providers&lt;/b&gt;&lt;br&gt;SMTP / SMS" vertex="1">
+          <mxGeometry height="90" width="440" x="1190" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="providersi" parent="providers" style="shape=mxgraph.azure.azure_subscription;html=1;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="34" x="10" y="29" as="geometry" />
+        </mxCell>
+        <mxCell id="outage" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;verticalAlign=middle;" value="&lt;b&gt;Global outage target:&lt;/b&gt; existing BMS workloads, building connections and notifications continue; valid sessions continue where cached validation permits. New authentication, provisioning and relocation unavailable. EMS depends on cached metadata and valid authorization. Operator restart requires to pull new global desired state, will leave cluster running as-is until this can be successfully pulled." vertex="1">
+          <mxGeometry height="85" width="1590" x="40" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="sign" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;verticalAlign=middle;" value="&lt;b&gt;Open decision:&lt;/b&gt; cross-region login signing / validation key design; regional-only secrets stay regional. We should try to let only the SSO sign session tokens, so that a compromised region cannot sign any access." vertex="1">
+          <mxGeometry height="85" width="460" x="1170" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="gso" edge="1" parent="1" source="operator" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="global" value="Pull desired state / report status">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215" y="248" />
+              <mxPoint x="295" y="248" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="webglobal" edge="1" parent="1" source="web" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.35;exitY=0;entryX=0.8284313725490197;entryY=1;" target="global" value="SSO / routing">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emsglobal" edge="1" parent="1" source="ems" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="global" value="SSO / EMS metadata R/W">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="248" />
+              <mxPoint x="295" y="248" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="userweb" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="web" value="HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="875" y="253" />
+              <mxPoint x="500" y="253" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="userproxy" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.3088235294117647;exitY=1;entryX=0.5;entryY=0;" target="proxy" value="WSS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="userems" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.803921568627451;exitY=1;entryX=0.43478260869565216;entryY=0;" target="ems" value="HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mailout" edge="1" parent="1" source="mail" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="providers" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="778" y="722" />
+              <mxPoint x="1603" y="722" />
+              <mxPoint x="1603" y="1081" />
+              <mxPoint x="1403" y="1081" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="smsout" edge="1" parent="1" source="sms" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="providers" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1052" y="708" />
+              <mxPoint x="1617" y="708" />
+              <mxPoint x="1617" y="1095" />
+              <mxPoint x="1417" y="1095" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmsstore" edge="1" parent="1" source="work" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="store" value="Authenticated storage API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="625" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emsstore" edge="1" parent="1" source="ems" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="store" value="Authenticated storage API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="407" />
+              <mxPoint x="1169" y="407" />
+              <mxPoint x="1169" y="1088" />
+              <mxPoint x="315" y="1088" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
