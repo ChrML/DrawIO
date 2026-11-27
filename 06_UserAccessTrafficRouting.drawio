@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="tFTpYAMhbqKXsT8oKBL1">
-    <mxGraphModel dx="2196" dy="1001" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="2536" dy="1191" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -64,11 +64,12 @@
         <mxCell id="noroute" edge="1" parent="nowork" source="noing" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="nosite" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nolocal" edge="1" parent="no" source="noweb" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;labelPlacement=auto;" target="noing" value="Private HTTPS / WSS">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="nolocal" edge="1" parent="no" source="noweb" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.25;entryY=0;labelPlacement=auto;entryDx=0;entryDy=0;" target="noing" value="Private HTTPS / WSS">
+          <mxGeometry relative="1" x="-0.1931" as="geometry">
             <Array as="points">
-              <mxPoint x="8" y="145.8578431372549" />
-              <mxPoint x="8" y="434.3911764705882" />
+              <mxPoint x="12.1" y="154.8" />
+              <mxPoint x="12.1" y="295.6" />
+              <mxPoint x="80" y="295.6" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -111,13 +112,8 @@
         <mxCell id="seroute" edge="1" parent="sework" source="seing" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="sesite" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="selocal" edge="1" parent="se" source="seweb" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0;entryY=0.5;labelPlacement=auto;" target="seing" value="Private HTTPS / WSS">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="8" y="145.8578431372549" />
-              <mxPoint x="8" y="434.3911764705882" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="selocal" edge="1" parent="se" source="seweb" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelPlacement=auto;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="seing" value="Private HTTPS / WSS">
+          <mxGeometry relative="1" x="0.5331" as="geometry" />
         </mxCell>
         <mxCell id="gso" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=57;" value="&lt;b&gt;Global Site Operator&lt;/b&gt;&lt;br&gt;Site location and routing metadata" vertex="1">
           <mxGeometry height="100" width="380" x="555" y="650" as="geometry" />
