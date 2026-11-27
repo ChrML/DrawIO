@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="D-iENmitnVKrzpAwhns7">
+    <mxGraphModel dx="1998" dy="1115" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;strokeColor=none;fillColor=none;fontSize=24;align=left;" value="&lt;b&gt;05 — Current Storage Architecture &amp;amp; Data Residency&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1200" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="bms" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=60;" value="&lt;b&gt;BMS Site Services&lt;/b&gt;&lt;br&gt;Any execution region" vertex="1">
+          <mxGeometry height="75" width="330" x="160" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="bmsi" parent="bms" style="shape=image;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ems" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=60;" value="&lt;b&gt;EMS&lt;/b&gt;&lt;br&gt;Any execution region" vertex="1">
+          <mxGeometry height="75" width="330" x="750" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="emsi" parent="ems" style="shape=image;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="region" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;fillColor=#FFFAEF;verticalAlign=top;spacingTop=14;fontSize=20;container=1;" value="&lt;b&gt;Zaphire Storage - [Location]&lt;/b&gt; · Example: Norway 1" vertex="1">
+          <mxGeometry height="780" width="1180" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="public" parent="region" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=60;" value="&lt;b&gt;Public Storage API / Storage Ingress&lt;/b&gt;&lt;br&gt;storage-no-1.zaphire.io&lt;br&gt;Authenticated read / write · container-level authorization" vertex="1">
+          <mxGeometry height="105" width="580" x="300" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="publici" parent="public" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="private" parent="region" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;fillColor=#F8FAFC;verticalAlign=top;spacingTop=12;container=1;" value="&lt;b&gt;Private storage infrastructure&lt;/b&gt;" vertex="1">
+          <mxGeometry height="550" width="1130" x="25" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="logical" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;" value="&lt;b&gt;Logical Zaphire Storage Containers — 1 to N&lt;/b&gt;&lt;br&gt;Independent access permissions · BMS or EMS data" vertex="1">
+          <mxGeometry height="65" width="810" x="160" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=60;" value="&lt;b&gt;Storage API&lt;/b&gt;&lt;br&gt;Short-term data access and ingestion" vertex="1">
+          <mxGeometry height="85" width="320" x="405" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="apii" parent="api" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pg" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=60;" value="&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;br&gt;Short-term cache · up to 12 days&lt;br&gt;Loss of cache does not mean data loss" vertex="1">
+          <mxGeometry height="110" width="340" x="25" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="pgi" parent="pg" style="shape=cylinder3;html=1;boundedLbl=1;fillColor=#336791;strokeColor=#336791;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="log" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=60;" value="&lt;b&gt;Durable data log&lt;/b&gt;&lt;br&gt;All incoming data written to log&lt;br&gt;Authoritative until organized" vertex="1">
+          <mxGeometry height="110" width="320" x="405" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="logi" parent="log" style="shape=cylinder3;html=1;boundedLbl=1;fillColor=#C8A46E;strokeColor=#A48245;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="long" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=60;" value="&lt;b&gt;Azure Storage Account&lt;/b&gt;&lt;br&gt;Organized long-term data" vertex="1">
+          <mxGeometry height="110" width="340" x="765" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="longi" parent="long" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="organize" parent="private" style="rounded=1;html=1;whiteSpace=wrap;fontSize=16;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=60;" value="&lt;b&gt;Log organization / evacuation&lt;/b&gt;&lt;br&gt;Every 8 days" vertex="1">
+          <mxGeometry height="65" width="320" x="405" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="organizei" parent="organize" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="12" y="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="route" edge="1" parent="private" source="logical" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="api" value="Logical access">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" edge="1" parent="private" source="api" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.5;entryY=0;labelPlacement=auto;" target="pg" value="Recent data R/W">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="append" edge="1" parent="private" source="api" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="log" value="Write all data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="history" edge="1" parent="private" source="api" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelPlacement=auto;" target="long" value="Historical reads">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="evac" edge="1" parent="private" source="log" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="organize" value="Read log">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="persist" edge="1" parent="private" source="organize" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.5;entryY=1;labelPlacement=auto;" target="long" value="Organized data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="access" edge="1" parent="region" source="public" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="logical" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;align=left;" value="&lt;b&gt;Data residency:&lt;/b&gt; storage location is independent of execution region. Fixed replication policy per storage location; native Azure replication and failover where supported." vertex="1">
+          <mxGeometry height="65" width="1180" x="30" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="bmsin" edge="1" parent="1" source="bms" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.25;entryY=0;labelPlacement=auto;" target="public" value="Authenticated HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="196.4" />
+              <mxPoint x="475" y="196.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emsin" edge="1" parent="1" source="ems" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.7;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.75;entryY=0;labelPlacement=auto;" target="public" value="Authenticated HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="915" y="197.7" />
+              <mxPoint x="765" y="197.7" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
