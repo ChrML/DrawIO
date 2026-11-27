@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Amb6kLOPvXD9TVBCzUE9">
-    <mxGraphModel dx="2838" dy="1340" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="1578" dy="648" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -335,25 +335,28 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="emsglobal" edge="1" parent="1" source="ems" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="global" value="SSO / EMS metadata R/W">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="emsglobal" edge="1" parent="1" source="ems" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#8293A8;fontSize=12;labelBackgroundColor=#FFFFFF;dashed=1;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="global" value="SSO / EMS metadata R/W">
+          <mxGeometry relative="1" x="0.0011" as="geometry">
             <Array as="points">
-              <mxPoint x="1045" y="248" />
-              <mxPoint x="295" y="248" />
+              <mxPoint x="1045" y="211.2" />
+              <mxPoint x="295" y="211.2" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="userweb" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="web" value="HTTPS">
+        <mxCell id="userweb" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="web" value="HTTPS">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="875" y="253" />
-              <mxPoint x="500" y="253" />
+              <mxPoint x="875" y="193.2" />
+              <mxPoint x="500" y="193.2" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="userproxy" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.3088235294117647;exitY=1;entryX=0.5;entryY=0;" target="proxy" value="WSS">
+        <mxCell id="userproxy" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;exitX=0.3088235294117647;exitY=1;entryX=0.5;entryY=0;" target="proxy" value="WSS">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
+            <Array as="points">
+              <mxPoint x="696.17" y="160.33" />
+              <mxPoint x="696.17" y="335.33" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="userems" edge="1" parent="1" source="users" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.5;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.803921568627451;exitY=1;entryX=0.43478260869565216;entryY=0;" target="ems" value="HTTPS">
