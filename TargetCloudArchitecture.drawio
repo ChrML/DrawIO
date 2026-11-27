@@ -1,0 +1,175 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="zgR49fZFMXnusFIJD7is">
+    <mxGraphModel dx="1704" dy="936" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="&lt;b&gt;Zaphire Target Cloud Architecture&lt;/b&gt; — Regional application delivery" vertex="1">
+          <mxGeometry height="45" width="1450" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="clients" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#F1F5F9;strokeColor=#94A3B8;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Users / on-premise installations&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="390" x="565" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="clientsicon" parent="clients" style="shape=image;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tm" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#E7F0FF;strokeColor=#6797D3;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Azure Traffic Manager&lt;/b&gt;&lt;br&gt;zaphire.io · DNS endpoint selection" vertex="1">
+          <mxGeometry height="65" width="330" x="65" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tmicon" parent="tm" style="shape=mxgraph.azure.traffic_manager;fillColor=#00BEF2;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="business" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#EEF0F5;strokeColor=#94A3B8;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Zaphire Business Services&lt;/b&gt;&lt;br&gt;Licensing, software distribution" vertex="1">
+          <mxGeometry height="75" width="350" x="1125" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="businessicon" parent="business" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="global" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#E7F0FF;strokeColor=#6797D3;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Zaphire Production - Global&lt;/b&gt;&lt;br&gt;SSO · Global Site Operator&lt;br&gt;Global metadata storage (including EMS)&lt;div&gt;DNS management&lt;/div&gt;&lt;div&gt;Cloud container registry&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="390" x="565" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="globalicon" parent="global" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="no" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#F0F8F1;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;verticalAlign=top;spacingTop=14;container=1;" value="&lt;b&gt;Zaphire Production - Norway&lt;/b&gt;" vertex="1">
+          <mxGeometry height="322" width="460" x="65" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="noicon" parent="no" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="42.93333333333333" width="44" x="14" y="10.733333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="noplatform" parent="no" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#FFFFFF;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;AKS — Regional shared services&lt;/b&gt;&lt;br&gt;BMS Webserver, EMS, Proxy Ingress&lt;br&gt;Alert distribution, Mail / SMS" vertex="1">
+          <mxGeometry height="85.37" width="410" x="25" y="77.52000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="noplatformicon" parent="noplatform" style="shape=image;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="31.81490683229814" width="34.99639751552795" x="14" y="25.610999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="nowork" parent="no" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#FFFFFF;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;AKS — BMS workloads&lt;/b&gt;&lt;br&gt;Site Services and regional execution" vertex="1">
+          <mxGeometry height="61" width="410" x="25" y="219" as="geometry" />
+        </mxCell>
+        <mxCell id="noworkicon" parent="nowork" style="shape=image;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="26.7446108878334" width="29.419071976616742" x="14" y="16.147058823529413" as="geometry" />
+        </mxCell>
+        <mxCell id="localno" edge="1" parent="no" source="noplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="nowork" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reg" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#F0F8F1;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;verticalAlign=top;spacingTop=14;container=1;" value="&lt;b&gt;Zaphire Production - Region N&lt;/b&gt;" vertex="1">
+          <mxGeometry height="317" width="460" x="1015" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="regicon" parent="reg" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="42.266666666666666" width="44" x="14" y="10.566666666666666" as="geometry" />
+        </mxCell>
+        <mxCell id="regplatform" parent="reg" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#FFFFFF;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;AKS — Regional shared services&lt;/b&gt;&lt;br&gt;BMS Webserver, EMS, Proxy Ingress&lt;br&gt;Alert distribution, Mail / SMS" vertex="1">
+          <mxGeometry height="75" width="410" x="25" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="regplatformicon" parent="regplatform" style="shape=image;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="28.391167192429023" width="31.230283911671926" x="14" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="regwork" parent="reg" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#FFFFFF;strokeColor=#76A67B;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;AKS — BMS workloads&lt;/b&gt;&lt;br&gt;Site Services and regional execution" vertex="1">
+          <mxGeometry height="69.67" width="410" x="25" y="211.33" as="geometry" />
+        </mxCell>
+        <mxCell id="regworkicon" parent="regwork" style="shape=image;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="31.027648914455376" width="34.130413805900915" x="14" y="18.44205882352941" as="geometry" />
+        </mxCell>
+        <mxCell id="localreg" edge="1" parent="reg" source="regplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="regwork" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#FFF4DC;strokeColor=#C8A46E;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Zaphire Storage - [Location]&lt;/b&gt;&lt;br&gt;Dedicated storage AKS and Azure Storage&lt;br&gt;Fixed data residency and replication policy" vertex="1">
+          <mxGeometry height="120" width="390" x="565" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="storageicon" parent="storage" style="shape=image;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mgmt" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fontSize=16;fillColor=#EEF0F5;strokeColor=#94A3B8;fontColor=#243447;strokeWidth=1.5;spacingLeft=62;align=left;" value="&lt;b&gt;Zaphire Infrastructure Management&lt;/b&gt;&lt;br&gt;Rancher · Centralized health and observability across clusters" vertex="1">
+          <mxGeometry height="75" width="1410" x="65" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="mgmticon" parent="mgmt" style="shape=image;image=https://icons.diagrams.net/assets/others/1/Rancher.svg;imageAspect=1;aspect=fixed;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="44" x="14" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="Solid: application / storage requests · Dashed: DNS / control plane · DevOps, Development and Staging: see separate registry architecture" vertex="1">
+          <mxGeometry height="35" width="1410" x="65" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" edge="1" parent="1" source="clients" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#8293A8;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;verticalAlign=bottom;labelPlacement=auto;" target="tm" value="DNS query / answer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="businessflow" edge="1" parent="1" source="clients" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelPlacement=auto;" target="business" value="Licensing / distribution">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nohttps" edge="1" parent="1" source="clients" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.15;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="noplatform" value="HTTPS / WSS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="623.5" y="185" />
+              <mxPoint x="295" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="noglobal" edge="1" parent="1" source="noplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#8293A8;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;exitX=1;exitY=0.2;entryX=0.25;entryY=1;labelPlacement=auto;" target="global" value="Identity / metadata / routing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="662.5" y="508" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nost" edge="1" parent="1" source="nowork" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.25;entryY=0;labelPlacement=auto;" target="storage" value="Authenticated storage API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="295" y="790" />
+              <mxPoint x="662.5" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emsno" edge="1" parent="1" source="noplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.95;entryX=0;entryY=0.4;labelPlacement=auto;" target="storage" value="EMS storage">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="65" as="offset" />
+            <Array as="points">
+              <mxPoint x="575" y="583" />
+              <mxPoint x="575" y="888" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reghttps" edge="1" parent="1" source="clients" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="regplatform" value="HTTPS / WSS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="896.5" y="185" />
+              <mxPoint x="1245" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="regglobal" edge="1" parent="1" source="regplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#8293A8;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;exitX=0;exitY=0.2;entryX=0.75;entryY=1;labelPlacement=auto;" target="global" value="Identity / metadata / routing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="857.5" y="508" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="regst" edge="1" parent="1" source="regwork" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.75;entryY=0;labelPlacement=auto;" target="storage" value="Authenticated storage API">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1245" y="790" />
+              <mxPoint x="857.5" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emsreg" edge="1" parent="1" source="regplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.95;entryX=1;entryY=0.4;labelPlacement=auto;" target="storage" value="EMS storage">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-65" as="offset" />
+            <Array as="points">
+              <mxPoint x="965" y="583" />
+              <mxPoint x="965" y="888" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cross" edge="1" parent="1" source="noplatform" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeColor=#405F80;strokeWidth=1.7;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.8;entryX=0;entryY=0.8;verticalAlign=bottom;labelPlacement=auto;" target="regplatform" value="Cross-region proxy when needed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnsnote" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="DNS selects a healthy regional endpoint, not the site’s assigned region." vertex="1">
+          <mxGeometry height="100" width="200" x="59" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="routingnote" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="Regional operators pull desired placement. Global has no regional Kubernetes API access." vertex="1">
+          <mxGeometry height="120" width="175" x="973" y="237.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
