@@ -97,11 +97,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="keys" edge="1" parent="global" source="sso" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;entryX=0;entryY=0.3;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="vault" value="Signing / secrets">
+        <mxCell id="keys" edge="1" parent="global" source="sso" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;entryX=0;entryY=0.3;labelPlacement=auto;orthogonalLoop=1;jettySize=auto;" target="vault" value="Signing / secrets">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="348" y="282" />
-              <mxPoint x="348" y="230" />
+              <mxPoint x="348" y="250" />
+              <mxPoint x="705" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
