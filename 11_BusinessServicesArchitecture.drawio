@@ -1,0 +1,203 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="p6WvxJQ4bRLRRse3ud7S">
+    <mxGraphModel dx="2500" dy="1171" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="&lt;b&gt;11 — Target Business Services Architecture&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1500" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#EEF0F5;strokeColor=#94A3B8;align=left;spacingLeft=57;" value="&lt;b&gt;Authorized administrators&lt;/b&gt;&lt;br&gt;Corporate identity · MFA · private access" vertex="1">
+          <mxGeometry height="85" width="440" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="admini" parent="admin" style="shape=image;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="devices" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#EEF0F5;strokeColor=#94A3B8;align=left;spacingLeft=57;" value="&lt;b&gt;Customer installations&lt;/b&gt;&lt;br&gt;On-premise · BMS-in-a-Box · IoT gateways" vertex="1">
+          <mxGeometry height="85" width="580" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="devicesi" parent="devices" style="shape=image;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="biz" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;fillColor=#F5F9FF;verticalAlign=top;spacingTop=12;container=1;fontSize=18;" value="&lt;b&gt;Zaphire Business Services&lt;/b&gt; · Single execution region" vertex="1">
+          <mxGeometry height="590" width="1110" x="30" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="bizi" parent="biz" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="36" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cluster" parent="biz" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;fillColor=#FFFFFF;verticalAlign=top;spacingTop=12;container=1;fontSize=18;" value="&lt;b&gt;Business Services AKS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="195" width="1060" x="25" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="clusteri" parent="cluster" style="shape=image;imageAspect=1;image=https://app.diagrams.net/img/lib/azure2/compute/Kubernetes_Services.svg;" value="" vertex="1">
+          <mxGeometry height="32" width="36" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="asset" parent="cluster" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=57;" value="&lt;b&gt;Cloud Asset Manager&lt;/b&gt;&lt;br&gt;Private admin interface" vertex="1">
+          <mxGeometry height="95" width="310" x="20" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="asseti" parent="asset" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cla" parent="cluster" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=57;" value="&lt;b&gt;Central License Authority&lt;/b&gt;&lt;br&gt;license.zaphire.io · public HTTPS" vertex="1">
+          <mxGeometry height="95" width="310" x="375" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="clai" parent="cla" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dist" parent="cluster" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#F0F8F1;strokeColor=#76A67B;align=left;spacingLeft=57;" value="&lt;b&gt;Software Distribution API&lt;/b&gt;&lt;br&gt;cr.zaphire.io · public HTTPS&lt;br&gt;Stateless" vertex="1">
+          <mxGeometry height="95" width="310" x="730" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="disti" parent="dist" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="assetst" parent="biz" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Asset inventory&lt;/b&gt;&lt;br&gt;Azure Storage Account" vertex="1">
+          <mxGeometry height="85" width="310" x="45" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="assetsti" parent="assetst" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="licst" parent="biz" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;License data&lt;/b&gt;&lt;br&gt;Azure Storage Account" vertex="1">
+          <mxGeometry height="85" width="310" x="400" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="licsti" parent="licst" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="registry" parent="biz" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Distribution ACR&lt;/b&gt;&lt;br&gt;Private · geo-redundant" vertex="1">
+          <mxGeometry height="85" width="310" x="755" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="registryi" parent="registry" style="shape=mxgraph.azure.container_registry;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hsm" parent="biz" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Dedicated license signing HSM&lt;/b&gt;&lt;br&gt;Non-exportable signing key" vertex="1">
+          <mxGeometry height="60" width="310" x="400" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="hsmi" parent="hsm" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Key_Vault.svg;" value="" vertex="1">
+          <mxGeometry height="25.411764705882355" width="36" x="12" y="17.294117647058826" as="geometry" />
+        </mxCell>
+        <mxCell id="ast" edge="1" parent="biz" source="asset" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="assetst" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lst" edge="1" parent="biz" source="cla" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="licst" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lh" edge="1" parent="biz" source="cla" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;entryX=1;entryY=0.5;labelPlacement=auto;" target="hsm" value="Sign licenses">
+          <mxGeometry relative="1" x="0.3088" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="197" />
+              <mxPoint x="735" y="197" />
+              <mxPoint x="735" y="462" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pull" edge="1" parent="biz" source="dist" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="registry" value="Pull artifacts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="release" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;fillColor=#FFFAEF;verticalAlign=top;spacingTop=12;container=1;fontSize=18;" value="&lt;b&gt;Zaphire Release Management&lt;/b&gt;" vertex="1">
+          <mxGeometry height="590" width="410" x="1230" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="releasei" parent="release" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="32" width="36" x="12" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sign" parent="release" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Signing Service&lt;/b&gt;&lt;br&gt;Approved releases" vertex="1">
+          <mxGeometry height="85" width="360" x="25" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="signi" parent="sign" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="shsm" parent="release" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Dedicated software signing HSM&lt;/b&gt;&lt;br&gt;Cloud and customer keys" vertex="1">
+          <mxGeometry height="95" width="360" x="25" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="shsmi" parent="shsm" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Key_Vault.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="promote" parent="release" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Release Promotion Service&lt;/b&gt;&lt;br&gt;Stateless · validates signatures" vertex="1">
+          <mxGeometry height="85" width="360" x="25" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="promotei" parent="promote" style="shape=mxgraph.kubernetes.icon2;prIcon=deploy;html=1;fillColor=#2875E2;strokeColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ref" parent="release" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="See diagram 02 for full registry and release workflow." vertex="1">
+          <mxGeometry height="65" width="360" x="25" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="signh" edge="1" parent="release" source="sign" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="shsm" value="Sign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="global" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=57;" value="&lt;b&gt;Production - Global&lt;/b&gt;&lt;br&gt;Global Site Operator · desired state" vertex="1">
+          <mxGeometry height="90" width="345" x="30" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="globali" parent="global" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#FFF4DC;strokeColor=#C8A46E;align=left;spacingLeft=57;" value="&lt;b&gt;Storage - [Location]&lt;/b&gt;&lt;br&gt;Logical container provisioning" vertex="1">
+          <mxGeometry height="90" width="345" x="420" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="storagei" parent="storage" style="shape=image;imageAspect=1;image=https://icons.diagrams.net/assets/azure/1/Storage_Accounts_Classic.svg;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudacr" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#E7F0FF;strokeColor=#6797D3;align=left;spacingLeft=57;" value="&lt;b&gt;Production - Global&lt;/b&gt;&lt;br&gt;Cloud Production ACR" vertex="1">
+          <mxGeometry height="90" width="410" x="1230" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudacri" parent="cloudacr" style="shape=mxgraph.azure.container_registry;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="legacy" parent="1" style="rounded=1;html=1;whiteSpace=wrap;fontSize=15;strokeWidth=1.5;fillColor=#EEF0F5;strokeColor=#94A3B8;align=left;spacingLeft=57;" value="&lt;b&gt;Global SSO&lt;/b&gt;&lt;br&gt;Legacy download authentication only" vertex="1">
+          <mxGeometry height="90" width="330" x="810" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="legacyi" parent="legacy" style="shape=mxgraph.azure.azure_subscription;fillColor=#00BEF2;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="12" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="adm" edge="1" parent="1" source="admin" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="asset" value="Private access">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="license" edge="1" parent="1" source="devices" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.15;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="cla" value="License issuance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="download" edge="1" parent="1" source="devices" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.85;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="dist" value="License-based downloads (target)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gso" edge="1" parent="1" source="asset" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=0.25;entryY=0;labelPlacement=auto;" target="global" value="Update desired state">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-11.8" y="412.5" />
+              <mxPoint x="-11.8" y="875" />
+              <mxPoint x="116.3" y="875" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="store" edge="1" parent="1" source="asset" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.15;exitY=1;entryX=0.5;entryY=0;labelPlacement=auto;" target="storage" value="Create containers">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="121.5" y="530" />
+              <mxPoint x="55" y="530" />
+              <mxPoint x="55" y="855" />
+              <mxPoint x="592.5" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legacyedge" edge="1" parent="1" source="dist" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#8293A8;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelPlacement=auto;" target="legacy" value="Legacy SSO">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1165" y="412.5" />
+              <mxPoint x="1165" y="890" />
+              <mxPoint x="975" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pdist" edge="1" parent="1" source="promote" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;labelPlacement=auto;" target="registry" value="Promote customer releases">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pcloud" edge="1" parent="1" source="promote" style="html=1;edgeStyle=orthogonalEdgeStyle;endArrow=classic;endFill=1;strokeWidth=1.6;strokeColor=#405F80;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0.8;entryY=0;labelPlacement=auto;" target="cloudacr" value="Promote cloud releases">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="617.5" />
+              <mxPoint x="1660" y="885" />
+              <mxPoint x="1558" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="policy" parent="1" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=14;align=left;" value="&lt;b&gt;Security and availability:&lt;/b&gt; only license.zaphire.io and cr.zaphire.io are public. Private data resources; geo-redundant durable storage where supported. Existing cloud BMS/EMS and licensed installations must not depend on Business Services availability. Cloud does not use the License Authority. Administrative access technology remains open." vertex="1">
+          <mxGeometry height="85" width="1610" x="30" y="1060" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
